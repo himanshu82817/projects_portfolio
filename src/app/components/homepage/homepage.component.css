@@ -1,0 +1,45 @@
+main{
+  width: 100%;
+  padding:0 5%;
+}
+#bg{
+  position:absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.card{
+  margin: 100px 50px;
+  height: 190px;
+  position: relative;
+  padding: 20px;
+}
+.img{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+img{
+  position:absolute;
+  top: 0;
+  transition: 4s;
+}
+.card:hover  img{
+  transform: translateY(-80%);
+}
+.name{
+  position: absolute;
+  z-index: 2;
+  bottom:1%;
+  font-size: 20px;
+  width: 80%;
+  left: 10%;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  cursor: pointer;
+}

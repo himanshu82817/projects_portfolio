@@ -1,0 +1,46 @@
+<main>
+    <header [ngClass]="!nav? '': 'hideHeader' ">
+        <img class="logo" [routerLink]="['']" src="/assets/images/logo.png" alt="">
+        <i (click)="toggleNav()" class="fas fa-bars"></i>
+        <div class="media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-behance"></i>
+        </div>
+    </header>
+    <nav [ngClass]="nav? 'showNav': '' " >
+        <img [routerLink]="['']" src="/assets/images/logo.png" alt="" class="logoA">
+        <div class="options">
+            <p *ngFor="let item of options">{{item.name}}</p>
+            <i (click)="toggleNav()" class="fas fa-angle-left"></i>
+        </div>
+        <div class="contact">
+            <div class="mob">
+                <div class="cont">
+                    <img src="assets/images/india.svg" alt="">
+                    <p>(+91)9466082817</p>
+                </div>
+                <div class="cont">
+                    <img src="assets/images/usa.svg" alt="">
+                    <p>(+1)9466082817</p>
+                </div>
+            </div>
+            <div class="mail">
+                <p> <i class="fas fa-paper-plane"></i> info@example.com</p>
+            </div>
+            <div class="smedia">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-behance"></i>
+            </div>
+            <div class="link">
+                <p class="contactUs">CONTACT US</p>
+                <p class="hireUs">HIRE US</p>
+            </div>
+        </div>
+    </nav>
+</main>

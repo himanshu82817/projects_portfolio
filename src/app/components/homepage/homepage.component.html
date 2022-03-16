@@ -1,0 +1,23 @@
+<main>
+  <img id="bg" src="assets/images/portfolio_main_bg.jpg" alt="">
+  <owl-carousel-o #owlElement [options]="customOptions" id="owl-carousel" >
+    <ng-template class="owl-carousel" *ngFor="let item of cards"  carouselSlide>
+      <div class="card">
+        <div class="img">
+          <img [src]="item[0].img" alt="">
+        </div>
+        <div class="name">
+          <p [routerLink]="['project']" >{{item[0].name}}</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img [src]="item[1].img" alt="">
+        </div>
+        <div class="name">
+          <p [routerLink]="['project']" >{{item[1].name}}</p>
+        </div>
+      </div>
+    </ng-template> 
+  </owl-carousel-o>
+</main>
