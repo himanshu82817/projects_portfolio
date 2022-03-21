@@ -150,6 +150,7 @@ nav{
         flex-direction: row;
         border: none;
     }
+    
     .logo{
         width: 15%  ;
     }
@@ -158,6 +159,7 @@ nav{
     }
     .fa-bars{
         font-size: 1.5rem;
+        transform:rotate(0deg);
     }
     .media i{
         margin: 0 10px;
