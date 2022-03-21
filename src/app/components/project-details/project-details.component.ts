@@ -27,7 +27,7 @@ export class ProjectDetailsComponent implements OnInit , AfterViewInit {
       // elm.click()
     }
     if(event.wheelDelta>0){
-      this.owlElement.previous()
+      // this.owlElement.previous()
     // console.log(this.owlElement.items)
   }
   }

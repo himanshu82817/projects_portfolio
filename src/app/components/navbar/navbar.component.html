@@ -13,7 +13,7 @@
     <nav [ngClass]="nav? 'showNav': '' " >
         <img [routerLink]="['']" src="/assets/images/logo.png" alt="" class="logoA">
         <div class="options">
-            <p *ngFor="let item of options">{{item.name}}</p>
+            <p (click)="toggleNav()" [routerLink]="['']" *ngFor="let item of options">{{item.name}}</p>
             <i (click)="toggleNav()" class="fas fa-angle-left"></i>
         </div>
         <div class="contact">
